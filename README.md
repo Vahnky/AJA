@@ -1,2 +1,22 @@
 # AJAX
 
+Dupont
+123
+
+
+CREATE TABLE Admins (
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    pass VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE client (
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    statut VARCHAR(255) NOT NULL,
+    balance VARCHAR(255)
+);
+
+
+INSERT INTO Admins (name, pass)
+VALUES ('Dupont', SHA2('123', 512));
